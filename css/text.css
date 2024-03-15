@@ -1,0 +1,125 @@
+.text-32 {
+    font-size: 32px;
+    line-height: 37px;
+}
+.text-16 {
+    font-size: 16px;
+    line-height: 18px;
+}
+.text-13 {
+    font-size: 13px;
+    line-height: 16px;
+}
+.text-25 {
+    font-size: 25px;
+    line-height: 30px;
+}
+.text-20 {
+    font-size: 20px;
+    line-height: 24px;
+}
+.text-64 {
+    font-size: 64px;
+    line-height: 72px;
+}
+.text-50 {
+    font-size: 50px;
+    line-height: 64px;
+}
+.text-16AF0B {
+    color: var(--color-16AF0B);
+    transition: color 0.5s ease 0s;
+    -webkit-transition: color 0.5s ease 0s;
+    -moz-transition: color 0.5s ease 0s;
+    -ms-transition: color 0.5s ease 0s;
+    -o-transition: color 0.5s ease 0s;
+}
+@media (min-width: 1281px) {
+    .text-16AF0B:hover:is(a, button,svg) {
+        color: white;
+    }
+}
+.text-B88731 {
+    color: var(--color-B88731);
+}
+.text-9EB211 {
+    color: var(--color-9EB211);
+}
+@media (min-width: 1281px) {
+    .text-9EB211:hover:is(button, a, svg) {
+        color: var(--color-9EB211-hover);
+    }
+}
+.text-F60101 {
+    color: var(--color-F60101);
+}
+.text-6EC97A {
+    color: var(--color-6EC97A);
+}
+.text-black {
+    color: black;
+    transition: color 0.5s ease 0s;
+    -webkit-transition: color 0.5s ease 0s;
+    -moz-transition: color 0.5s ease 0s;
+    -ms-transition: color 0.5s ease 0s;
+    -o-transition: color 0.5s ease 0s;
+}
+@media (min-width: 1281px) {
+    .text-black:hover:is(a, button) {
+        color: rgb(64, 62, 62);
+    }
+}
+@media (min-width: 768px) {
+    .md-text-16AF0B {
+        transition: color 0.5s ease 0s;
+        -webkit-transition: color 0.5s ease 0s;
+        -moz-transition: color 0.5s ease 0s;
+        -ms-transition: color 0.5s ease 0s;
+        -o-transition: color 0.5s ease 0s;
+        color: var(--color-16AF0B);
+    }
+}
+@media (min-width: 1281px) {
+    .md-text-16AF0B:hover:is(button, a) {
+        color: white;
+    }
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-italic {
+    font-style: italic;
+}
+
+.text-a-c {
+    text-align: center;
+}
+.text-a-r {
+    text-align: right;
+}
+
+.text-a-l {
+    text-align: left;
+}
+
+.text-t-u {
+    text-transform: uppercase;
+}
+.text-t-c {
+    text-transform: capitalize;
+}
+
+.text-white {
+    color: white;
+    transition: color 0.5s ease 0s;
+    -webkit-transition: color 0.5s ease 0s;
+    -moz-transition: color 0.5s ease 0s;
+    -ms-transition: color 0.5s ease 0s;
+    -o-transition: color 0.5s ease 0s;
+}
+
+@media (min-width: 1281px) {
+    .text-white:hover:is(button, a) {
+        color: rgb(151, 190, 32);
+    }
+}

@@ -1,0 +1,86 @@
+@import "./position.css";
+@import "./padding.css";
+@import "./text.css";
+@import "./width.css";
+@import "./height.css";
+@import "./display.css";
+@import "./background.css";
+@import "./margin.css";
+@import "./border.css";
+@import "./gap.css";
+
+.loader {
+    animation: rotate 1s infinite;
+    -webkit-animation: rotate 1s infinite;
+}
+
+.z-10 {
+    z-index: 10;
+}
+.z-20 {
+    z-index: 20;
+}
+.z-30 {
+    z-index: 30;
+}
+
+.fill-16AF0B {
+    fill: var(--color-16AF0B);
+}
+
+@media (min-width: 1281px) {
+    .fill-16AF0B:hover {
+        fill: white;
+    }
+}
+
+@media (min-width: 768px) {
+    .md-opacity-1 {
+        opacity: 1;
+    }
+
+    .md-visibility-v {
+        visibility: visible;
+    }
+    .md-order-2 {
+        order: 2;
+    }
+    .md-order-3 {
+        order: 3;
+    }
+}
+
+.aspect-square {
+    aspect-ratio: 1/1;
+}
+
+.scroll-y-auto {
+    overflow-y: auto;
+}
+.opacity-0 {
+    opacity: 0;
+}
+.visibility-h {
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.transition-d-0.5 {
+    transition: all 2s ease 0s;
+    -webkit-transition: all 2s ease 0s;
+    -moz-transition: all 2s ease 0s;
+    -ms-transition: all 2s ease 0s;
+    -o-transition: all 2s ease 0s;
+}

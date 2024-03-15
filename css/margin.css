@@ -1,0 +1,34 @@
+.mx-auto {
+    margin: 0 auto;
+}
+.mt-auto {
+    margin-top: auto;
+}
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.m-i-auto {
+    margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+    .md-ml-i {
+        margin-left: initial;
+    }
+    .md-ml-auto {
+        margin-left: auto;
+    }
+}

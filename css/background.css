@@ -1,0 +1,46 @@
+.bg-color-2931AE {
+    background-color: var(--color-2931AE);
+}
+.bg-color-15CBB2 {
+    background-color: var(--color-15CBB2);
+}
+@media (min-width: 1281px) {
+    .hover-bg-color-2931AE:hover {
+        background-color: var(--color-2931AE-hover);
+    }
+}
+.bg-electro {
+    background: linear-gradient(
+        180deg,
+        var(--color-2931AE),
+        var(--color-A7B7B0)
+    );
+}
+.bg-3A19191 {
+    background-color: var(--color-3A19191);
+}
+@media (min-width: 768px) {
+    .md-bg-t {
+        background: transparent;
+    }
+}
+
+.bg-button-blue-grey {
+    background: linear-gradient(
+        180deg,
+        var(--color-8093E1),
+        var(--color-808080)
+    );
+}
+
+.bg-prod-info {
+    background: linear-gradient(
+        270deg,
+        var(--color-658ABB),
+        var(--color-335E54)
+    );
+}
+
+.bg-16AF0B {
+    background-color: var(--color-16AF0B);
+}

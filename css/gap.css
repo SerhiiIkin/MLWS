@@ -1,0 +1,13 @@
+.row-gap-20 {
+    row-gap: 20px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .md-gap-20 {
+        gap: 20px;
+    }
+}

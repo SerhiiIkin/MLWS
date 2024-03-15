@@ -1,0 +1,75 @@
+.header:has(input[type="checkbox"]:checked) .header__menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header__menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s;
+    position: absolute;
+    top: calc(var(--header-hight));
+    border-radius: 0px 0px 15px 16px;
+    background-color: var(--color-A19191);
+    left: 0;
+    width: 100%;
+    padding-block: 20px;
+    padding-right: 15px;
+    text-align: right;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -ms-transition: opacity 2s;
+    -o-transition: opacity 2s;
+}
+
+.header__burger-menu-btn {
+    display: block;
+    width: 22px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.header__burger-menu-btn::before,
+.header__burger-menu-btn::after,
+.header__burger-menu-btn span {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-16AF0B);
+    left: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.header__burger-menu-btn::before {
+    top: 0;
+}
+
+.header__burger-menu-btn::after {
+    bottom: 0;
+}
+
+.header__burger-menu-btn span {
+    top: 50%;
+    transition: none;
+}
+
+.header:has(input[type="checkbox"]:checked) .header__burger-menu-btn span {
+    visibility: hidden;
+}
+
+.header:has(input[type="checkbox"]:checked) .header__burger-menu-btn::before {
+    rotate: 45deg;
+    top: 50%;
+}
+
+.header:has(input[type="checkbox"]:checked) .header__burger-menu-btn::after {
+    rotate: -45deg;
+    top: 50%;
+}

@@ -1,0 +1,22 @@
+.h-100dvh-header {
+    height: calc(100dvh - var(--header-hight));
+}
+.h-header {
+    min-height: var(--header-hight);
+}
+.h-full {
+    height: 100%;
+}
+
+.h-50dvh {
+    height: 50dvh;
+}
+.h-35dvh {
+    height: 35dvh;
+}
+.min-h-100dvh {
+    min-height: 100dvh;
+}
+.max-h-30 {
+    max-height: 30px;
+}

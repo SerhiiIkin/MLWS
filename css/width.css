@@ -1,0 +1,23 @@
+.w-full {
+    width: 100%;
+}
+.max-w-45 {
+    max-width: 45px;
+}
+@media (min-width: 768px) {
+    .md-w-i {
+        width: initial;
+    }
+}
+
+.max-w-50 {
+    max-width: 50px;
+}
+
+.max-w-full {
+    max-width: 100%;
+}
+
+.max-w-500 {
+    max-width: 500px;
+}
