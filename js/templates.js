@@ -11,8 +11,8 @@ export const kurvLinkTemplate = (kurvLength) => `<div class="relative">
 export const headerTemplate = (kurvLength = 0) => `
     <header class="header h-header fixed z-30  w-full p-b-20 bg-color-2931AE">
             <div class="container flex align-i-c">
-                <a href="/" class="text-16AF0B">MLWS</a>
-                <a id="kurvLink" href="/kurv/index.html" class="ml-auto mr-10 md-order-3 md-ml-i">
+                <a href="../" class="text-16AF0B">MLWS</a>
+                <a id="kurvLink" href="../kurv/index.html" class="ml-auto mr-10 md-order-3 md-ml-i">
                     <div class="relative">
                         <span class="text-13 ${
                             kurvLength > 0 ? "text-9EB211" : "text-16AF0B"
@@ -26,10 +26,10 @@ export const headerTemplate = (kurvLength = 0) => `
                 <div class="header__menu  md-opacity-1 md-visibility-v md-relative md-bg-t md-top-initial md-p-i md-w-i md-order-2 md-ml-auto">
                     <ul class="container  md-flex gap-10">
                         <li class="pb-20  text-white text-20-24 md-p-i">
-                            <a href="/kurv/index.html" class="md-text-16AF0B hover-md-text-16AF0B">Kurv</a>
+                            <a href="../kurv/index.html" class="md-text-16AF0B hover-md-text-16AF0B">Kurv</a>
                         </li>
                         <li class="text-white text-20-24">
-                            <a href="/products/index.html" class="md-text-16AF0B">Produkter</a>
+                            <a href="../products/index.html" class="md-text-16AF0B">Produkter</a>
                         </li>
                     </ul>
                 </div>
@@ -106,7 +106,7 @@ export const footerTemplate = () => `<footer class="bg-3A19191 p-b-20 mt-auto">
         </li>
     </ul>
     <a href="tel:+4550246519" class="grid-col-2 text-black">+4550246519</a>
-    <a href="#" class="grid-col-2 text-black">messileonl@gmail.com</a>
+    <a href="mailto:messileonl@gmail.com" class="grid-col-2 text-black">messileonl@gmail.com</a>
 </div>
 </footer>`;
 
