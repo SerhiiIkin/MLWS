@@ -8,11 +8,11 @@ export const kurvLinkTemplate = (kurvLength) => `<div class="relative">
 <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/></svg>   
 </div>`;
 
-export const headerTemplate = (kurvLength = 0) => `
+export const headerTemplate = (kurvLength = 0, isHoved=false) => `
     <header class="header h-header fixed z-30  w-full p-b-20 bg-color-2931AE">
             <div class="container flex align-i-c">
-                <a href="../" class="text-16AF0B">MLWS</a>
-                <a id="kurvLink" href="../kurv/index.html" class="ml-auto mr-10 md-order-3 md-ml-i">
+                <a href="${isHoved ? ".": ".."}/" class="text-16AF0B">MLWS</a>
+                <a id="kurvLink" href="${isHoved ? ".": ".."}/kurv/index.html" class="ml-auto mr-10 md-order-3 md-ml-i">
                     <div class="relative">
                         <span class="text-13 ${
                             kurvLength > 0 ? "text-9EB211" : "text-16AF0B"
@@ -26,10 +26,10 @@ export const headerTemplate = (kurvLength = 0) => `
                 <div class="header__menu  md-opacity-1 md-visibility-v md-relative md-bg-t md-top-initial md-p-i md-w-i md-order-2 md-ml-auto">
                     <ul class="container  md-flex gap-10">
                         <li class="pb-20  text-white text-20-24 md-p-i">
-                            <a href="../kurv/index.html" class="md-text-16AF0B hover-md-text-16AF0B">Kurv</a>
+                            <a href="${isHoved ? ".": ".."}/kurv/index.html" class="md-text-16AF0B hover-md-text-16AF0B">Kurv</a>
                         </li>
                         <li class="text-white text-20-24">
-                            <a href="../products/index.html" class="md-text-16AF0B">Produkter</a>
+                            <a href="${isHoved ? ".": ".."}/products/index.html" class="md-text-16AF0B">Produkter</a>
                         </li>
                     </ul>
                 </div>
