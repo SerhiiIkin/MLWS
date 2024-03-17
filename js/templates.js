@@ -176,7 +176,7 @@ export const singleProductTemplate = (product) => {
     </div>
     `;
 };
-export const productTemplate = (product) => {
+export const productTemplate = (product,isHoved=false) => {
     const {
         thumbnail,
         title,
@@ -211,7 +211,7 @@ export const productTemplate = (product) => {
                 <p class="text-F60101 text-white rounded-20 bg-16AF0B p-5-15 text-a-c"> <span class="text-t-u">spar</span> ${discountPercentage.toFixed()}%</p>
                 <span class="text-6EC97A">${price} kr</span>
             </div>
-            <a class="bg-color-2931AE text-white p-5 rounded-20" href="../single-product/index.html?id=${id}">Mere info</a>
+            <a class="bg-color-2931AE text-white p-5 rounded-20" href="${isHoved ? ".": ".."}/single-product/index.html?id=${id}">Mere info</a>
         </div>
     </div>
 `;

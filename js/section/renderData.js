@@ -10,6 +10,7 @@ export default async function renderData({
     error,
     isLoading,
     data,
+    isHoved
 }) {
     const dataContainer = document.querySelector(idSelector);
     let loading = true;
@@ -37,7 +38,7 @@ export default async function renderData({
     if (data?.length) {
         dataContainer.replaceChildren();
         data.slice(0, slice).forEach((d) => {
-            dataContainer.insertAdjacentHTML("beforeend", template(d));
+            dataContainer.insertAdjacentHTML("beforeend", template(d, isHoved));
             
             if (isSlider && d.images.length > 1) {
                 const selector =
