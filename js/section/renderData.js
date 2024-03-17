@@ -10,7 +10,7 @@ export default async function renderData({
     error,
     isLoading,
     data,
-    isHoved
+    isHoved=false
 }) {
     const dataContainer = document.querySelector(idSelector);
     let loading = true;

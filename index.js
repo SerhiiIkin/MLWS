@@ -7,7 +7,7 @@ import renderData from "./js/section/renderData.js";
 import { fetchData } from "./js/other/fetchData.js";
 
 const kurv = JSON.parse(localStorage.getItem("kurv")) || [];
-export const isHoved = true;
+const isHoved = true;
 
 document.body.insertAdjacentHTML(
     "afterbegin",
@@ -27,4 +27,5 @@ renderData({
     error,
     isLoading,
     data,
+    isHoved
 });
